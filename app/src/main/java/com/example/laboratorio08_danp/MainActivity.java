@@ -29,10 +29,8 @@ public class MainActivity extends AppCompatActivity {
                             System.out.println("Fetching FCM registration token failed");
                             return;
                         }
-
                         // Get new FCM registration token
                         String token = task.getResult();
-
                         // Log and toast
                         System.out.println(token);
                         Toast.makeText(MainActivity.this, token, Toast.LENGTH_SHORT).show();
